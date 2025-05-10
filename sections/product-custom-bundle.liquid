@@ -1,0 +1,25 @@
+{% comment %}
+  - loop through the product variants
+  - render a wrapper with a label and input
+{% endcomment %}
+
+<section>
+<form>
+  <h5>Choose Your Bundle:</h5>
+  {% for variant in product.variants %}
+<span>
+  <label>{{ variant.title }}</label>
+  <input name="" type="number" />
+</span>
+  {% endfor %}
+</form>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}

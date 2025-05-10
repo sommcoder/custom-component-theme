@@ -1,0 +1,184 @@
+{% comment %}
+  SOMMCODER COMPONENT
+  https://www.sommcoder.com
+  - This is a bundle variant picker that allows users to end a NUMERIC value for each of the
+  variants and their options.
+  - this is then bundled when the user adds to cart, appending the amalgamated products/variants
+  into the cart.
+
+  // ! LOGIC:
+  - will definitely need to inspect the Buy Buttons Snippet
+  - I'm thinking I'll need to edit the cart.js and/or cart.liquid, we WANT to bundle the variants into the cart
+  - how does the variant picker connect with the price.liquid ?
+  - I want the VALUES in the Input field to be used to add ALL of the variants to the cart
+  - I may need to adjust how this will look in the cart. Perhaps there's a way to
+  utilize product tags or metafields to make this work!
+{% endcomment %}
+<script>
+  console.log({{product | json}})
+  console.log({{product.variants | json}})
+</script>
+
+{%- liquid
+  assign variants_available_arr = product.variants | map: 'available'
+  assign variants_option1_arr = product.variants | map: 'option1'
+  assign variants_option2_arr = product.variants | map: 'option2'
+  assign variants_option3_arr = product.variants | map: 'option3'
+  assign product_form_id = 'product-form-' | append: section.id
+-%}
+
+<style>
+  .variant-bundle-wrapper {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+  }
+
+  /* wraps all of the variants: */
+  .variant-input-section {}
+
+.variant-input-section {
+;
+/* display: flex; */
+}
+
+.variant-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: center;
+}
+
+/* each row */
+.variant-option-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  & img {
+
+  ;
+  /* */
+
+}
+
+& .variant-input-label-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+ & .variant-input-label-wrapper:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid black;
+}
+}
+
+.variant-input-label-wrapper {
+
+  & label {
+    display: inline-block;
+  }
+  & input {
+    display: inline-block;
+    width: 80px;
+    justify-self: center;
+  }
+}
+
+.variant-option-wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+  outline-offset: 0;
+}
+</style>
+
+<variant-inputs class="variant-bundle-wrapper">
+  <h5>Choose Your Bundle</h5>
+  <section class="variant-input-section">
+    {% comment %}
+      * loop through the product variants
+    {% endcomment %}
+    {%- for variant in product.variants -%}
+      <span class="variant-wrapper">
+        {% comment %}
+          * Liquid Block checks whether a product option is disabled
+          based on the availability of product variants
+        {% endcomment %}
+        <!--
+          {%- liquid    assign option_disabled = true
+            for option1_name in variants_option1_arr
+              case option.position
+                when 1
+                  if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                    assign option_disabled = false
+                  endif
+                when 2
+                  if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                    assign option_disabled = false
+                  endif
+                when 3
+                  if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                    assign option_disabled = false
+                  endif
+              endcase
+            endfor
+          -%}
+        -->
+        <span class="variant-option-wrapper">
+          <img
+            src="{{ variant.featured_image | image_url}}"
+            width="200px"
+            height="200px">
+          {% comment %}
+            loop through the options in the variant
+          {% endcomment %}
+          <h5 class="variant-title">{{ variant.title }}</h5>
+          {%- for option in variant.options -%}
+            <span class="variant-input-label-wrapper">
+              <label for="{{ section.id }}-{{ variant.position }}-{{ forloop.index0 }}">
+                {{ value -}}
+                <span class="visually-hidden">
+                  {{ 'products.product.variant_sold_out_or_unavailable' | t }}
+                </span>
+              </label>
+              <input
+                type="number"
+                id="{{ section.id }}-{{ variant.id }}-{{ forloop.index0 }}"
+                name="{{ variant.title }}"
+                value=""
+                form="{{ product_form_id }}"
+                {% if variant.selected_value == value %}
+                checked
+                {% endif %}
+                {% if option_disabled %}
+                class="disabled"
+                {% endif %}>
+            </span>
+          {% endfor %}
+        </span>
+      </span>
+    {% endfor %}
+  </section>
+</variant-inputs>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const inputWrapperArr = document.querySelectorAll(".variant-input-label-wrapper");
+    const inputArr = [];
+    inputWrapperArr.forEach((el) => inputArr.push(el.querySelector('input')))
+    console.log(inputArr);
+
+      const priceDisplay = document.getElementById(".bundle-price-display");
+      const addToCartButton = document.getElementById(".add-bundle-to-cart");
+
+    // we get get the <input> child of each of the wrappers:
+    console.log(inputWrapperArr);
+
+
+  });
+</script>
