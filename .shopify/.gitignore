@@ -1,0 +1,4 @@
+# Ignore the entire .shopify directory
+.shopify/*
+# Ignore the zip
+*.zip

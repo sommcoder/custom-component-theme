@@ -1,0 +1,28 @@
+{
+  "name": "custom-component-theme",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sommcoder/custom-component-theme#readme",
+  "bugs": {
+    "url": "https://github.com/sommcoder/custom-component-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sommcoder/custom-component-theme.git"
+  },
+  "license": "ISC",
+  "author": "Brian Davies",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "shopify theme dev --s custom-component-portfolio.myshopify.com",
+    "push:soft": "shopify theme push --u",
+    "push:hard": "shopify theme push",
+    "check": "shopify theme check",
+    "logout": "shopify auth logout",
+    "list": "shopify theme list",
+    "info": "shopify theme info",
+    "meta": "shopify theme metafields pull",
+    "zip": "shopify theme package"
+  }
+}
