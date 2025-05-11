@@ -161,15 +161,6 @@
         "disabled": false,
         "settings": {}
       },
-      "2624907671885267117": {
-        "type": "shopify://apps/collectify/blocks/product-collector-block/88747148-bcc6-4177-ae87-43f7d97b5764",
-        "disabled": false,
-        "settings": {
-          "icon-text": "Product Collector Icon",
-          "icon": "shopify://shop_images/wishlist.svg",
-          "injection-location": ".product__title"
-        }
-      },
       "5946647744298494267": {
         "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": true,
@@ -215,6 +206,17 @@
           "swym_variant_selector_product_detail_font_color": "#fff",
           "swym_variant_selector_create_list_placeholder_text": "Enter wishlist name",
           "swym_variant_selector_create_list_title": "Special List"
+        }
+      },
+      "2624907671885267117": {
+        "type": "shopify://apps/collectify/blocks/product-collector-block/88747148-bcc6-4177-ae87-43f7d97b5764",
+        "disabled": false,
+        "settings": {
+          "icon-text": "Product Collector Icon",
+          "icon": "shopify://shop_images/wishlist.svg",
+          "injection-location": ".product__title",
+          "icon-size": 20,
+          "css-styles": ".wishlist-icon {\n background-color: red;\n}"
         }
       }
     }
