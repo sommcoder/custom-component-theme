@@ -166,9 +166,7 @@
         "disabled": false,
         "settings": {
           "icon-text": "Product Collector Icon",
-          "icon": "shopify://shop_images/wishlist.svg",
-          "injection-location-class": "product__title",
-          "injection-location-id": ""
+          "icon": "shopify://shop_images/wishlist.svg"
         }
       }
     }
