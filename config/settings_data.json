@@ -165,7 +165,9 @@
         "type": "shopify://apps/collectify/blocks/product-collector-block/88747148-bcc6-4177-ae87-43f7d97b5764",
         "disabled": false,
         "settings": {
-          "icon-text": "Product Collector Icon"
+          "icon-text": "Product Collector Icon",
+          "icon": "shopify://shop_images/wishlist.svg",
+          "injection-location": ""
         }
       }
     }
