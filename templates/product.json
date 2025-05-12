@@ -38,6 +38,10 @@
           "type": "price",
           "settings": {}
         },
+        "uploadery_app_block_dHL3Hx": {
+          "type": "shopify://apps/uploadery/blocks/app-block/5253cb5d-9d0f-47bd-a1aa-51cb83bf6de3",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -57,15 +61,15 @@
             "swym_atw_button_alignment": "center",
             "swym_add_to_wishlist_color": "#000000",
             "swym_added_to_wishlist_color": "#222222",
-            "swym_button_text_color": "#fff",
-            "swym_atw_border_color": "#000",
+            "swym_button_text_color": "#ffffff",
+            "swym_atw_border_color": "#000000",
             "swym_atw_border_thickness": 0,
             "swym_atw_button_border_radius": 0,
             "swym_enable_hover_customization": false,
             "swym_hover_add_to_wishlist_color": "#000000",
             "swym_hover_added_to_wishlist_color": "#222222",
-            "swym_hover_button_text_color": "#fff",
-            "swym_hover_atw_border_color": "#000",
+            "swym_hover_button_text_color": "#ffffff",
+            "swym_hover_atw_border_color": "#000000",
             "swym_hover_atw_border_thickness": 0,
             "swym_hover_atw_button_border_radius": 0,
             "swym_custom_css": ""
@@ -94,6 +98,7 @@
         "variant_picker",
         "quantity_selector",
         "price",
+        "uploadery_app_block_dHL3Hx",
         "buy_buttons",
         "wishlist_plus_wishlist_pdp_button_eHxTCg",
         "fields_personalizer_app_block_ehJyEB",

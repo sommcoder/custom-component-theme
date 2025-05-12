@@ -213,10 +213,7 @@
         "disabled": false,
         "settings": {
           "icon-text": "Product Collector Icon",
-          "icon": "shopify://shop_images/wishlist.svg",
-          "injection-location": ".product__title",
-          "icon-size": 20,
-          "css-styles": ".wishlist-icon {\n background-color: red;\n}"
+          "icon": "shopify://shop_images/wishlist.svg"
         }
       }
     }
