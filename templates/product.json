@@ -49,6 +49,33 @@
             "show_gift_card_recipient": false
           }
         },
+        "upfile_uploaded_file_orders_upfile_theme_block_NwUUXV": {
+          "type": "shopify://apps/upfile-uploaded-file-orders/blocks/upfile-theme-block/e7359f9d-6ab4-41ee-8f7d-90f3a1478b01",
+          "settings": {
+            "block-orientation": "column",
+            "horizontal-alignment": "center",
+            "vertical-alignment": "center",
+            "block-top-padding": 4,
+            "block-bottom-padding": 4,
+            "app-bottom-margin": 4,
+            "app-top-margin": 4,
+            "sub-block-gap": 4,
+            "app-divider-top": false,
+            "app-divider-bottom": false,
+            "valid-text-singular": "🎉 File is valid!",
+            "valid-text-plural": "🎉 Files are valid!",
+            "invalid-text-singular": "👎Oops.. this isn't a valid file",
+            "invalid-text-plural": "👎Oops.. these aren't valid files",
+            "font-size": 16,
+            "default-btn-color": "#121212",
+            "button-text": "Select or Drop Files",
+            "disclaimer-text": "(max 20MB per file)",
+            "primary-color": "#3d3d3d",
+            "secondary-color": "#535353",
+            "font-color": "#FFFFFF",
+            "fileviewer-text": "Submitted files appear here"
+          }
+        },
         "fields_personalizer_app_block_ehJyEB": {
           "type": "shopify://apps/fields-personalizer/blocks/app_block/be85361a-4b91-4076-ba54-73344853be66",
           "disabled": true,
@@ -74,6 +101,7 @@
         "price",
         "uploadery_app_block_dHL3Hx",
         "buy_buttons",
+        "upfile_uploaded_file_orders_upfile_theme_block_NwUUXV",
         "fields_personalizer_app_block_ehJyEB",
         "description",
         "share"
