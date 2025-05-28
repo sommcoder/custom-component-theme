@@ -216,7 +216,10 @@
         "disabled": false,
         "settings": {
           "embed-injection-type": "cart-drawer",
-          "embed-injection-location": "#CartDrawer"
+          "theme-cart-drawer-selector": "#CartDrawer",
+          "app-cart-selector": "",
+          "injection-reference-element-selector": "cart-drawer-items",
+          "injection-element-position": "beforebegin"
         }
       }
     }
