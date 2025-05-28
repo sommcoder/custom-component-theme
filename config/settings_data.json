@@ -213,7 +213,7 @@
       },
       "10909818631589494194": {
         "type": "shopify://apps/upfile-uploaded-file-orders/blocks/upfile-app-bridge-embed/e7359f9d-6ab4-41ee-8f7d-90f3a1478b01",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "embed-injection-type": "none",
           "embed-injection-location": ""
