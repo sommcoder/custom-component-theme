@@ -88,8 +88,15 @@
             "disclaimer-text": "(max 20MB per file)",
             "primary-color": "#3d3d3d",
             "secondary-color": "#535353",
-            "font-color": "#FFFFFF",
+            "font-color": "#ffffff",
             "fileviewer-text": "Submitted files appear here"
+          }
+        },
+        "upload_lift_app_block_RGxirF": {
+          "type": "shopify://apps/upload-lift/blocks/app-block/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
+          "settings": {
+            "product": "{{product}}",
+            "field": ""
           }
         }
       },
@@ -104,7 +111,8 @@
         "fields_personalizer_app_block_ehJyEB",
         "description",
         "share",
-        "upfile_uploaded_file_orders_upfile_theme_block_7ThckV"
+        "upfile_uploaded_file_orders_upfile_theme_block_7ThckV",
+        "upload_lift_app_block_RGxirF"
       ],
       "settings": {
         "enable_sticky_info": true,
