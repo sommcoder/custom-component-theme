@@ -221,6 +221,11 @@
           "injection-reference-element-selector": "cart-drawer-items",
           "injection-element-position": "beforebegin"
         }
+      },
+      "15132424025755801183": {
+        "type": "shopify://apps/upload-lift/blocks/app-embed/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
