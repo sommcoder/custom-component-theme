@@ -1,1 +1,81 @@
-{"sections":{"cart-items":{"type":"main-cart-items","settings":{"padding_top":36,"padding_bottom":36}},"cart-footer":{"type":"main-cart-footer","blocks":{"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}}},"block_order":["subtotal","buttons"],"settings":{}}},"order":["cart-items","cart-footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17486532966d14c046": {
+      "type": "apps",
+      "blocks": {
+        "upfile_uploaded_file_orders_upfile_theme_block_ncBpYW": {
+          "type": "shopify://apps/upfile-uploaded-file-orders/blocks/upfile-theme-block/e7359f9d-6ab4-41ee-8f7d-90f3a1478b01",
+          "settings": {
+            "block-orientation": "column",
+            "horizontal-alignment": "center",
+            "vertical-alignment": "center",
+            "block-top-padding": 4,
+            "block-bottom-padding": 4,
+            "app-bottom-margin": 4,
+            "app-top-margin": 4,
+            "sub-block-gap": 4,
+            "app-divider-top": false,
+            "app-divider-bottom": false,
+            "valid-text-singular": "🎉 File is valid!",
+            "valid-text-plural": "🎉 Files are valid!",
+            "invalid-text-singular": "👎Oops.. this isn't a valid file",
+            "invalid-text-plural": "👎Oops.. these aren't valid files",
+            "font-size": 16,
+            "default-btn-color": "#121212",
+            "button-text": "Select or Drop Files",
+            "disclaimer-text": "(max 20MB per file)",
+            "primary-color": "#3d3d3d",
+            "secondary-color": "#535353",
+            "font-color": "#FFFFFF",
+            "fileviewer-text": "Submitted files appear here"
+          }
+        }
+      },
+      "block_order": [
+        "upfile_uploaded_file_orders_upfile_theme_block_ncBpYW"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "cart-items",
+    "17486532966d14c046",
+    "cart-footer"
+  ]
+}
